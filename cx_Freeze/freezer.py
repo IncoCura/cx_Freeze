@@ -504,7 +504,7 @@ class Freezer(object):
         filesToCopy = []
         magic = imp.get_magic()
         ignorePatterns = shutil.ignore_patterns("*.py", "*.pyc", "*.pyo",
-                "__pycache__")
+                "__pycache__", "*.a")
         for module in modules:
 
             # determine if the module should be written to the file system;
